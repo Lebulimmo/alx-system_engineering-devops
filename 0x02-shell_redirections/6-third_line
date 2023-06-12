@@ -1,3 +1,2 @@
 #!/bin/bash
-filename="iacta"
-line_number=3
+head -o 3 iacta | tail -o 1
