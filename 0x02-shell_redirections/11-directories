@@ -1,0 +1,14 @@
+#!/bin/bash
+
+count=0
+
+# Traverse directories recursively
+find . -mindepth 1 -type d | while read -r directory; do
+    # Exclude current directory (".") and parent directory ("..")
+    if [[ "$directory" != "." && "$directory" != ".." ]]; then
+        count=$((count + 1))
+    fi
+done
+
+echo "Number of directories and subdirectories: $count"
+
