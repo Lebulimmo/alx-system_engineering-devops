@@ -1,11 +1,2 @@
 #!/bin/bash
-
-filename="iacta"
-
-# Read the last line of the file
-last_line=$(tail -n 1 "$filename")
-
-# Append the last line to the file
-echo "$last_line" >> "$filename"
-
-echo "Last line duplicated in the file '$filename'."
+tail -1 < iacta >> iacta 

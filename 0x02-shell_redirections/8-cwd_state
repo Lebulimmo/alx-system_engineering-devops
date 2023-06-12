@@ -1,7 +1,2 @@
 #!/bin/bash
-
-filename="ls_cwd_content"
-
-ls -la > "$filename"
-
-echo "The output of 'ls -la' has been written to the file '$filename'."
+ls -la > ls_cwd_content 
